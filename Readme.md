@@ -42,9 +42,10 @@ This project reads real-time orientation data (X, Y, Z Euler angles) and calibra
     *   Open the Arduino IDE.
     *   Go to **Sketch** -> **Include Library** -> **Manage Libraries...**.
     *   Search for and install the following libraries:
-        *   `Adafruit BNO055`
         *   `Adafruit Unified Sensor`
-
+        *   `Adafruit BNO055`
+    *   The `Wire.h` and `utility/imumaths.h` libraries are included with the Arduino IDE and the BNO055 library, respectively, so no separate installation is needed for them.
+    
 3.  **Load the Sketch:**
     *   Copy the provided C++ code into a new sketch in the Arduino IDE.
     *   **Important:** The BNO055 sensor can have an I2C address of `0x28` or `0x29`. The provided code uses `0x28`. If your sensor is not detected, you may need to change this line:
