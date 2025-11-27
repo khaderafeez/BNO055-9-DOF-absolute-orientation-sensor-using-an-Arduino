@@ -93,6 +93,9 @@ This script connects to the specified serial port (`PORT`) at the defined `BAUDR
 ## Output Data Format
 
 The `bno_data.csv` file will contain the raw output from the sensor, with each line representing a single reading. The format for the data lines is as follows:
+```
+ python log_bno.py
+```
 
 ```
 X: [euler_x] Y: [euler_y] Z: [euler_z]		CALIBRATION: Sys=[0-3] Gyro=[0-3] Accel=[0-3] Mag=[0-3]
